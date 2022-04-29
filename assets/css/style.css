@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --blue-color: #6E73FF; 
+    --aqua-color: #07D9B2; 
+    --yellow-color: #EFF600; 
+    --orange-color: #FFB50F; 
+    --purple-color: #9D72FF; 
+    --fredoka-one-font:'Fredoka One', cursive;
+    --nunito-sans-font:  'Nunito Sans', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family:var(--nunito-sans-font);
+}
+
+body{
+    background-color: var(--purple-color);
+    text-align: center;
+}
+
+img{
+    width:850px;
+    margin: 120px 0px 60px 60px;
+}
+
+
+h1{
+    color: var(--yellow-color);
+    font-size: 50pt;
+    margin-bottom: 100px;
+}
+
+button{
+    background-color: var(--orange-color);
+    width:350px;
+    font-size: 30pt;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 2px #e47514;
+    margin: auto 30px;
+}
+
+a {
+    font-family: var(--fredoka-one-font);
+    color: var(--purple-color);
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: var(--orange-color);
+}
+
+    button:hover {
+    transform: scale(1.1);
+    transition:2s;
+}
+
+button:hover a{
+    color: #FFFFFF;
+}
+
+.question{
+    background-color: #f6e9c5;
+    max-width:900px;
+    width: 100%;
+    height: 300px;
+    margin: 100px auto 60px;
+    border-radius: 30px;
+    border-style:dotted;
+    border: 15px double var(--orange-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30pt;
+    color: #4f4e4e;
+}
+
+.butons{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+    width: 1300px;
+    margin: auto;
+}
+
+.btn{
+    background-color: #f6e9c5;
+    width: 90%;
+    margin: 15px auto;
+    padding: 10px;
+    font-size: 20px;
+    color: #191919;
+    box-shadow: 1PX 1PX 10PX #f39a51;
+    border-radius: 5px;
+    border: 2px solid var(--orange-color);
+}
+
+.btn:hover{
+    background-color: var(--orange-color);
+    transform: scale(1.02);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.bar_icons{
+    font-size:40px;
+    margin: 20px;
+    color: var(--yellow-color);
+}
+
+.bar_icons i{
+    margin: auto 50px;
+    animation: tel 1s infinite;
+}
+
+@keyframes tel{
+  0%{transform: rotateZ(5deg);}
+  50%{transform: rotateZ(-5deg);}
+  100%{transform: rotate(5deg);}
+
+}
